@@ -19,5 +19,7 @@ inputs:
     default: 'compile'
 runs:
   using: 'docker'
-  entrypoint: node packages/action/lib/action.js ${{ inputs.TASK }}
+  entrypoint: node packages/action/lib/action.js
   image: 'Dockerfile'
+  args: 
+    - ${{ inputs.TASK }}

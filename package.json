@@ -1,0 +1,19 @@
+{
+  "author": "TypeSafe.js",
+  "ava": {
+    "failWithoutAssertions": false,
+    "files": [
+      "test/**/*.test.js"
+    ]
+  },
+  "description": "Shared code and dependencies for type-safe JavaScript",
+  "dependencies": {
+    "@typesafejs/sdk": "git@github.com:typesafejs/sdk.git#workspace=@typesafejs/sdk"
+  },
+  "license": "ISC",
+  "name": "@typesafejs/action",
+  "publishConfig": {
+    "access": "public"
+  },
+  "version": "0.2.2"
+}

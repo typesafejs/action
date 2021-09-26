@@ -13,7 +13,11 @@ inputs:
     description: 'The npm client to use'
     required: true
     default: 'yarn'
+  task:
+    description: 'The task to run'
+    required: true
+    default: 'compile'
 runs:
   using: 'docker'
-  entrypoint: node packages/action/lib/compile.js
+  entrypoint: node packages/action/lib/action.js ${{ inputs.TASK }}
   image: 'Dockerfile'

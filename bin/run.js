@@ -5,4 +5,6 @@ const action = new Action()
   
 if (process.argv[2] === 'compile') {
   action.compile()
+} else if (process.argv[2] === 'test') {
+  action.test()
 }

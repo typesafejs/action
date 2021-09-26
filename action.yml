@@ -19,7 +19,8 @@ inputs:
     default: 'compile'
 runs:
   using: 'docker'
-  entrypoint: node /opt/bin/run.js
+  entrypoint: node
   image: 'Dockerfile'
   args: 
+    - /opt/bin/run.js
     - ${{ inputs.TASK }}

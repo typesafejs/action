@@ -8,7 +8,7 @@
   },
   "description": "Shared code and dependencies for type-safe JavaScript",
   "dependencies": {
-    "@typesafejs/sdk": "git@github.com:typesafejs/sdk.git#workspace=@typesafejs/sdk"
+    "@typesafejs/sdk": "typesafejs/sdk.git#workspace=@typesafejs/sdk&head=main"
   },
   "license": "ISC",
   "name": "@typesafejs/action",
